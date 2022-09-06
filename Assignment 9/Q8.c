@@ -11,7 +11,7 @@ int main()
         printf("0");
         break;
     default:
-        printf("%d",x-x*2);
+        printf("%d",-x);
     }
     
     return 0;
