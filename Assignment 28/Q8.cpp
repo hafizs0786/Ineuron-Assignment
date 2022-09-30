@@ -14,15 +14,11 @@ class Coordinate
             cout<<x<<" "<<y<<" "<<z<<endl;
         }
 
-        friend Coordinate operator,(Coordinate, Coordinate );
+        Coordinate operator,(Coordinate C)
+        {
+            return C;
+        }
 };
-
-Coordinate operator,(Coordinate a, Coordinate b)
-{
-    //With friend function we can also access left object of ','operator
-    return b; //Returning right object of ','operator
-}
-
 
 int main()
 {
